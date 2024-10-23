@@ -25,6 +25,10 @@ describe('Fibonacci Function', () => {
     expect(fibonacci(5)).toBe(5);
   });
 
+  test('should return 8 for fibonacci(6)', () => {
+    expect(fibonacci(6)).toBe(8);
+  });
+
   test('should throw an error for negative numbers', () => {
     expect(() => fibonacci(-1)).toThrow('Input must be a non-negative integer.');
   });
